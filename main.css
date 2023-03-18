@@ -1,0 +1,126 @@
+html,
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container {
+  margin: 10px 10vw;
+}
+
+#main {
+  margin: 0 2vw;
+  text-align: center;
+}
+
+#main h1 {
+  font-size: 42pt;
+  margin-bottom: 0;
+}
+
+#main h2 {
+  font-size: 18pt;
+  margin-top: 0;
+}
+
+#main p {
+  font-size: 12pt;
+  text-align: justify;
+}
+
+#map {
+  width: 100%;
+  height: 80vh;
+}
+
+#sources {
+  margin: 0 2vw 10px 2vw;
+}
+
+.info {
+  margin: 2.5px;
+  max-width: 55vw;
+}
+
+.info img {
+  width: 100%;
+}
+
+.slide-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.slides-container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-arrow {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background: none;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+
+#slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
+
+.marker-div {
+  background-color: #F0F0F0;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.marker-div::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #4285F4;
+}
+
+[class$=api-load-alpha-banner] {
+  display: none;
+}
