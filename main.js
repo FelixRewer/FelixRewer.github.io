@@ -61,7 +61,7 @@ const path = [
         </button>
         <ul class="slides-container">
           <li class="slide">18. Juli 1944: "Lazarett 2 Lowitsch", warscheinliche Ankunft in Łowicz \n21. Juli 1944: "Operation"</li>
-          <li class="slide"><img src="./img/st_peter_and_paul.jpeg" />26. Juli: Zeichnung aus dem Merkbuch: Kathedrale St. Peter und Paul, Brünn</li>
+          <li class="slide"><img src="./img/st_peter_and_paul.png" />26. Juli: Zeichnung aus dem Merkbuch: Kathedrale St. Peter und Paul, Brünn</li>
           <li class="slide"><img src="./img/st_peter_and_paul_real.jpeg" />Bild der Kathedrale St. Peter und Paul, Brünn</li>
         </ul>
         <button class="slide-arrow" id="slide-arrow-next">
@@ -136,7 +136,7 @@ const path = [
         </button>
         <ul class="slides-container">
           <li class="slide">30. Juli 1944: "Ankunft im Res.Laz. Mauer Öhling", genaue Position unbekannt \n14. August 1944: "Entlassung aus dem Lazarett" \n15. August 1944: "Urlaub", unklar wo er da war</li>
-          <li class="slide"><img src="mauer_oehling.png" />Zeichnung aus dem Merkbuch: Lageplan des Reserve-Lazaretts Mauer-Öhling</li>
+          <li class="slide"><img src="./img/mauer_oehling.png" />Zeichnung aus dem Merkbuch: Lageplan des Reserve-Lazaretts Mauer-Öhling</li>
         </ul>
         <button class="slide-arrow" id="slide-arrow-next">
           &#8250;
@@ -184,7 +184,7 @@ const path = [
         </button>
         <ul class="slides-container">
           <li class="slide">2. Oktober 1944: \"Marsch nach Seegatta\", wahrscheinlich Seegatterl</li>
-          <li class="slide"><img src="./img/barbakan.jpeg" />2. Oktober 1944: Zeichnung aus dem Merkbuch: Bastei, Krakau</li>
+          <li class="slide"><img src="./img/barbakan.png" />2. Oktober 1944: Zeichnung aus dem Merkbuch: Bastei, Krakau</li>
           <li class="slide"><img src="./img/barbakan_real.jpeg" />Bild des Barbakan von Krakau</li>
         </ul>
         <button class="slide-arrow" id="slide-arrow-next">
