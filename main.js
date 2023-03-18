@@ -7,33 +7,51 @@ const createContent = (text) => {
 
 const createCarousel = (slides) => {
   const content = document.createElement("div");
-  content.className = "slide-wrapper info";
+  content.className = "slide-wrapper";
   content.innerHTML = `
-  <div class="slide-wrapper info">
-    <button class="slide-arrow" id="slide-arrow-prev">
-      &#8249;
-    </button>
-    <ul class="slides-container">
-      ${slides.map(slide => `<li class="slide">${slide}</li>`).join("")}
-    </ul>
-    <button class="slide-arrow" id="slide-arrow-next">
-      &#8250;
-    </button>
-  </div>
+  <button class="slide-arrow" id="slide-arrow-prev">
+    &#8249;
+  </button>
+  <ul class="slides-container">
+    ${slides.map(slide => `<li class="slide info">${slide}</li>`).join("")}
+  </ul>
+  <button class="slide-arrow" id="slide-arrow-next">
+    &#8250;
+  </button>
   `;
 
   const slidesContainer = content.querySelector(".slides-container");
   const nextButton = content.querySelector(".slide-wrapper #slide-arrow-next");
-  const prevButton = content.querySelector(".slide-wrapper #slide-arrow-prev");
+  const previousButton = content.querySelector(".slide-wrapper #slide-arrow-prev");
+
+  const slideCount = slidesContainer.querySelectorAll(".slide").length;
+  let index = 0;
+
+  slidesContainer.scrollTo(0, 0);
+  previousButton.disabled = true;
 
   nextButton.addEventListener("click", () => {
-    const slideWidth = slidesContainer.querySelector(".slide").clientWidth + 1;
-    slidesContainer.scrollLeft += slideWidth;
+    const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
+    slidesContainer.scrollBy(slideWidth, 0);
+
+    if (++index >= slideCount - 1) {
+      index = slideCount - 1;
+      nextButton.disabled = true;
+    }
+
+    previousButton.disabled = false;
   });
 
-  prevButton.addEventListener("click", () => {
-    const slideWidth = slidesContainer.querySelector(".slide").clientWidth + 1;
-    slidesContainer.scrollLeft -= slideWidth;
+  previousButton.addEventListener("click", () => {
+    const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
+    slidesContainer.scrollBy(-slideWidth, 0);
+
+    if (--index <= 0) {
+      index = 0;
+      previousButton.disabled = true;
+    }
+
+    nextButton.disabled = false;
   });
 
   return content;
@@ -192,7 +210,7 @@ const points = [
 		position: { lat: 51.9383156468531, lng: 7.167651854636709 }, // erhalten des Wehrpasses
     content: createContent(`
       <img src="./img/wehrpass.png" />
-      Coesfeld <br />Hier erhielt Ferdinand am 20. April 1943 seinen Wehrpass, wurde also in die Wehrmacht rekrutiert.
+      <h3>Coesfeld</h3><br />Hier erhielt Ferdinand am 20. April 1943 seinen Wehrpass, wurde also in die Wehrmacht rekrutiert.
     `),
     resetFrontlines: false
 	},
