@@ -59,14 +59,14 @@ const path = [
         <button class="slide-arrow" id="slide-arrow-prev">
           &#8249;
         </button>
+        <ul class="slides-container">
+          <li class="slide">18. Juli 1944: "Lazarett 2 Lowitsch", warscheinliche Ankunft in Łowicz \n21. Juli 1944: "Operation"</li>
+          <li class="slide"><img src="./img/st_peter_and_paul.jpeg" />26. Juli: Zeichnung aus dem Merkbuch: Kathedrale St. Peter und Paul, Brünn</li>
+          <li class="slide"><img src="./img/st_peter_and_paul_real.jpeg" />Bild der Kathedrale St. Peter und Paul, Brünn</li>
+        </ul>
         <button class="slide-arrow" id="slide-arrow-next">
           &#8250;
         </button>
-        <ul class="slides-container">
-          <li class="slide">18. Juli 1944: "Lazarett 2 Lowitsch", warscheinliche Ankunft in Łowicz \n21. Juli 1944: "Operation"</li>
-          <li class="slide"><img src="" />26. Juli: Zeichnung aus dem Merkbuch: Kathedrale St. Peter und Paul, Brünn</li>
-          <li class="slide"><img src="st_peter_and_paul.jpeg" />Bild der Kathedrale St. Peter und Paul, Brünn</li>
-        </ul>
       </div>
       `;
 
@@ -134,13 +134,13 @@ const path = [
         <button class="slide-arrow" id="slide-arrow-prev">
           &#8249;
         </button>
+        <ul class="slides-container">
+          <li class="slide">30. Juli 1944: "Ankunft im Res.Laz. Mauer Öhling", genaue Position unbekannt \n14. August 1944: "Entlassung aus dem Lazarett" \n15. August 1944: "Urlaub", unklar wo er da war</li>
+          <li class="slide"><img src="mauer_oehling.png" />Zeichnung aus dem Merkbuch: Lageplan des Reserve-Lazaretts Mauer-Öhling</li>
+        </ul>
         <button class="slide-arrow" id="slide-arrow-next">
           &#8250;
         </button>
-        <ul class="slides-container">
-          <li class="slide">30. Juli 1944: "Ankunft im Res.Laz. Mauer Öhling", genaue Position unbekannt \n14. August 1944: "Entlassung aus dem Lazarett" \n15. August 1944: "Urlaub", unklar wo er da war</li>
-          <li class="slide"><img src="" /></li>
-        </ul>
       </div>
       `;
 
@@ -182,14 +182,14 @@ const path = [
         <button class="slide-arrow" id="slide-arrow-prev">
           &#8249;
         </button>
+        <ul class="slides-container">
+          <li class="slide">2. Oktober 1944: \"Marsch nach Seegatta\", wahrscheinlich Seegatterl</li>
+          <li class="slide"><img src="./img/barbakan.jpeg" />2. Oktober 1944: Zeichnung aus dem Merkbuch: Bastei, Krakau</li>
+          <li class="slide"><img src="./img/barbakan_real.jpeg" />Bild des Barbakan von Krakau</li>
+        </ul>
         <button class="slide-arrow" id="slide-arrow-next">
           &#8250;
         </button>
-        <ul class="slides-container">
-          <li class="slide">2. Oktober 1944: \"Marsch nach Seegatta\", wahrscheinlich Seegatterl</li>
-          <li class="slide"><img src="" />2. Oktober 1944: Zeichnung aus dem Merkbuch: Bastei, Krakau</li>
-          <li class="slide"><img src="barbakan_real.jpeg" />Bild des Barbakan von Krakau</li>
-        </ul>
       </div>
       `;
 
@@ -327,7 +327,7 @@ const points = [
     createContent: () => {
       const content = document.createElement("div");
       content.className = "info";
-      content.innerText = "Irgendwo in Kroatien \n Ferdinand war vom 18. Dezember 1943 bis zum 18. März 1944 in Kroatien eingesetzt zur \"Bekämpfung der Bandenbewegung in Kroatien\". \n Mit der Bandenbewegung ist wahrscheinlich die sich da weiter zuspitzende kommunistische Bewegung in Kroatien gemeint. Hauptmotiv dieser war es die Faschisten aus Kroatien zu werfen und Kroatien zu befreien, zum Missfallen der Achsenmächte. ";
+      content.innerText = "Irgendwo in Kroatien \nFerdinand war vom 18. Dezember 1943 bis zum 18. März 1944 in Kroatien eingesetzt zur \"Bekämpfung der Bandenbewegung in Kroatien\". \nMit der Bandenbewegung ist wahrscheinlich die sich da weiter zuspitzende kommunistische Bewegung in Kroatien gemeint. Hauptmotiv dieser war es die Faschisten aus Kroatien zu werfen und Kroatien zu befreien, zum Missfallen der Achsenmächte. ";
       return content;
     },
     resetFrontlines: true
@@ -411,7 +411,7 @@ const points = [
 
 const frontlines = [
   [ /* July 1 1944 */
-    { lat: 59.398009582095966, lng: 27.900668368157195 },
+    { lat: 59.398009582095966, lng: 27.900668368157195},
     { lat: 57.85820801080987, lng: 28.19258753163586},
     { lat: 55.359084579155116, lng: 28.793650213294967},
     { lat: 55.139220153156636, lng: 27.714844957819313},
@@ -425,7 +425,7 @@ const frontlines = [
     { lat: 46.08584614660286, lng: 30.540517112978616 }
   ],
   [ /* July 15 1944 */
-    { lat: 59.398009582095966, lng: 27.900668368157195 },
+    { lat: 59.398009582095966, lng: 27.900668368157195},
     { lat: 56.40549153314217, lng: 28.69918872511797},
     { lat: 54.86232321181895, lng: 24.356291721842148},
     { lat: 53.41873658363631, lng: 23.388965350309856},
@@ -454,12 +454,12 @@ const frontlines = [
     { lat: 56.53297395928472, lng: 24.55542439188906},
     { lat: 56.97289763914536, lng: 23.588422350865663},
     { lat: 57.0943967684788, lng: 23.239284041143385},
-    { lat: 57.115622489196404, lng: 22.939272047662993},//->
+    { lat: 57.115622489196404, lng: 22.939272047662993},
     { lat: 52.425543253866245, lng: 21.195786212660234},
     { lat: 51.89241966850639, lng: 21.349381563527746},
     { lat: 51.45501488281856, lng: 21.924775860017828},
     { lat: 50.52520347826833, lng: 21.81273957515355},
-    { lat: 50.26312577734555, lng: 20.95136726291083}, //<-
+    { lat: 50.26312577734555, lng: 20.95136726291083},
     { lat: 46.08584614660286, lng: 30.540517112978616}
   ],
   [ /* October 1 1944 */
@@ -469,36 +469,36 @@ const frontlines = [
     { lat: 56.929306189515366, lng: 24.84244394359275},
     { lat: 56.56155129716948, lng: 24.156833401102492},
     { lat: 56.90543380455685, lng: 23.52526028550357},
-    { lat: 56.75247881233405, lng: 22.712049446274843}, //7 ->
+    { lat: 56.75247881233405, lng: 22.712049446274843},
     { lat: 52.425543253866245, lng: 21.195786212660234}, 
     { lat: 51.89241966850639, lng: 21.349381563527746},
     { lat: 51.45501488281856, lng: 21.924775860017828},
     { lat: 50.52520347826833, lng: 21.81273957515355},
     { lat: 50.26312577734555, lng: 20.95136726291083},
-    { lat: 47.890023530722715, lng: 25.750029052068555}, //12
+    { lat: 47.890023530722715, lng: 25.750029052068555},
     { lat: 46.616708561411166, lng: 21.319329264137405},
     { lat: 46.13568666613819, lng: 20.27254640590322},
     { lat: 41.36769621012325, lng: 22.995757058604266},
-    { lat: 42.05165913497716, lng: 27.966381800064443},
+    { lat: 42.05165913497716, lng: 27.966381800064443}
   ],
   [ /* October 15 1944 */
     { lat: 58.15797354458696, lng: 22.214225778305963},
     { lat: 58.2447761475761, lng: 24.111022464297406},
     { lat: 57.23643660847528, lng: 24.40982759024485},
-    { lat: 56.75247881233405, lng: 22.712049446274843}, //4
+    { lat: 56.75247881233405, lng: 22.712049446274843},
     { lat: 56.16921694767538, lng: 21.01837544686995},
-    { lat: 55.531061761999304, lng: 22.26263053984924}, //6
+    { lat: 55.531061761999304, lng: 22.26263053984924},
     { lat: 52.425543253866245, lng: 21.195786212660234},
     { lat: 51.89241966850639, lng: 21.349381563527746},
     { lat: 51.45501488281856, lng: 21.924775860017828},
-    { lat: 50.52520347826833, lng: 21.81273957515355}, //9
+    { lat: 50.52520347826833, lng: 21.81273957515355},
     { lat: 50.26312577734555, lng: 20.95136726291083},
     { lat: 47.890023530722715, lng: 25.750029052068555},
     { lat: 46.78137612411769, lng: 21.872658607026302},
     { lat: 47.28206955867453, lng: 20.609306098967686},
     { lat: 46.02626164888215, lng: 19.29985596273001},
     { lat: 41.36769621012325, lng: 22.995757058604266},
-    { lat: 40.802609762442145, lng: 23.85481073337343},
+    { lat: 40.802609762442145, lng: 23.85481073337343}
   ],
   [ /* November 1 1944 */
     { lat: 57.05002572355875, lng: 23.32862142248757},
@@ -516,13 +516,13 @@ const frontlines = [
     { lat: 47.19322740307007, lng: 19.46985812257706},
     { lat: 46.09109002921977, lng: 18.933173530188327},
     { lat: 41.27657663703923, lng: 22.71616903535603},
-    { lat: 40.88456173606116, lng: 19.38662660154603},
+    { lat: 40.88456173606116, lng: 19.38662660154603}
   ],
   [ /* November 1 1944, second */
     { lat: 42.428518115575976, lng: 18.50984493804126},
     { lat: 42.69231327154515, lng: 18.738282093060647},
     { lat: 44.20920237387573, lng: 15.736106068303476},
-    { lat: 44.248562617240225, lng: 15.11384746059074},
+    { lat: 44.248562617240225, lng: 15.11384746059074}
   ]
 ]
 
