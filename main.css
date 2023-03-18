@@ -42,8 +42,13 @@ body {
   text-align: center;
 }
 
+.info h3 {
+  margin: 0;
+}
+
 .info img {
-  width: 400px;
+  max-width: 400px;
+  max-height: 200px;
 }
 
 .slide-wrapper {
@@ -76,9 +81,12 @@ body {
   transition: opacity 100ms;
 }
 
-.slide-arrow:hover,
-.slide-arrow:focus {
+.slide-arrow:hover {
   opacity: 1;
+}
+
+.slide-arrow:disabled {
+  opacity: 0.3;
 }
 
 #slide-arrow-prev {
@@ -98,8 +106,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   flex: 1 0 100%;
 }
 
