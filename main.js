@@ -179,9 +179,9 @@ const path = [
     position: { lat: 54.30687052815491, lng: 22.304211937981385 }, // Goldap  
     content: createCarousel([
       "Ferdinand verstarb am 28. November 1944 im Raum Hegelingen, Krs. Goldap. Er erlag nach offiziellem Bericht an einem Granatensplitter, der ihn während der Abwehr eines sowjertischen Angriffes im Herz getroffen hatte. <br />Am 1. Dezember 1944 wurde er wohl im Heldenfriedhod Reimannswalde, Krs. Goldap unter militärischen Ehren beigesetzt. Wir konnten diesen Friedhof leider nicht lokalisieren.",
-      "<img src=\"./img/mappe.jpg\" />Durchschossene Mappe",
-      "<img src=\"./img/stift.jpg\" />Durchschossener Stift",
-      "<img src=\"./img/merkbuch_durchschuss.jpg\" />Durchschossenes Merkbuch"
+      "<img src=\"./img/mappe.jpg\" />Mappe",
+      "<img src=\"./img/stift.jpg\" />Stift",
+      "<img src=\"./img/merkbuch_durchschuss.jpg\" />Merkbuch"
     ]),
     frontlines: [6, 7]
   }
